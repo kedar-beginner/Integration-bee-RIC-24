@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTEGRATION BEE</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Lato;
+        }
+
+        .heading {
+            position: relative;
+            border-bottom: 0.5px solid #565B62;
+            overflow: hidden;
+            margin: 8% 12% 0% 12%;
+            padding: 20px 20px 0px 20px;
+        }
+
+        .heading p {
+            padding-right: 3%;
+            float: right;
+            color: #00B0A6;
+        }
+
+        .heading p .ib {
+            font-family: Lato;
+            font-size: 40px;
+            font-weight: 350;
+            line-height: 40px;
+            text-align: left;
+
+        }
+
+        .heading p .ug {
+            font-family: Lato;
+            font-size: 40px;
+            font-style: italic;
+            font-weight: 500;
+            line-height: 45px;
+            text-align: left;
+        }
+
+        #testtube1 {
+            position: absolute;
+            z-index: -5;
+            top: 19vh;
+            left: 7vw;
+            width: 155px;
+            height: 149.76px;
+        }
+
+        #gear {
+            position: absolute;
+            top: 3vh;
+            left: 33vw;
+            rotate: -171.95deg;
+            z-index: -5;
+            width: 303px; 
+            height: 260px
+        }
+
+        .syllabus {
+            position: relative;
+            border-bottom: 0.5px solid #565B62;
+            margin: 0% 12%;
+            padding: 5% 0%;
+            display: flex;
+            column-gap: 15%;
+        }
+
+        .syllabus-left {
+            font-size: 12px;
+        }
+
+        .syllabusdesc-right span {
+            color: #00B0A6;
+            font-weight: 360;
+            font-size: 28px;
+            line-height: 28px;
+        }
+
+        .syllabusdesc-right p {
+            font-size: 18px;
+        }
+
+        .formats-and-rounds {
+            position: relative;
+            border-bottom: 0.5px solid #565B62;
+            margin: 0% 12%;
+            padding: 5% 0%;
+            display: flex;
+            column-gap: 13%;
+        }
+
+        #benzeneXflowers {
+            position: absolute;
+            width: 381px;
+            height: 400px;
+            rotate: -5deg;
+            z-index: -5;
+            top: 70vh;
+            right: 5vw;
+        }
+
+        .formats-and-rounds-left {
+            font-size: 12px;
+        }
+
+        .formats-and-rounds-right span {
+            color: #00B0A6;
+            font-weight: 360;
+            font-size: 28px;
+            line-height: 28px;
+        }
+
+        .littledesc {
+            font-size: 18px;
+        }
+
+        .elimination-round {
+            margin-top: 10%;
+        }
+
+        .elimination-round b {
+            font-size: 20px;
+        }
+
+        .super-16 {
+            margin-top: 10%;
+        }
+
+        .super-16 b {
+            font-size: 20px;
+            line-height: 20px;
+        }
+
+        .quarter-final{
+            margin-top: 10%;
+        }
+
+        .quarter-final b{
+            font-size: 20px;
+        }
+
+        .semi-final{
+            margin-top: 10%;
+        }
+
+        .semi-final b{
+            font-size: 20px;
+        }
+
+        .final{
+            margin-top: 10%;
+        }
+
+        .final b{
+            font-size: 20px;
+        }
+
+        .prize{
+            position: relative;
+            border-bottom: 0.5px solid #565B62;
+            margin: 0% 12%;
+            padding: 5% 0%;
+            display: flex;
+            column-gap: 17.5%;
+        }
+
+        .prize-left{
+            font-size: 12px;
+        }
+
+        .prize-right span{
+            color: #00B0A6;
+            font-weight: 360;
+            font-size: 28px;
+            line-height: 28px;
+        }
+
+        .general-rules{
+            position: relative;
+            border-bottom: 0.5px solid #565B62;
+            margin: 0% 12%;
+            padding: 5% 0%;
+            display: flex;
+            column-gap: 12.3%;
+        }
+
+        .general-rules-left{
+            font-size: 12px;
+        }
+
+        .general-rules-right span{
+            color: #00B0A6;
+            font-weight: 360;
+            font-size: 28px;
+            line-height: 28px;
+        }
+
+
+        #bulbXbrain{
+            position: absolute;
+            z-index: -10;
+            top: 197vh;
+            left: 7vw;
+            width: 170px;
+            height: 155px;
+        }
+
+        #labequipment{
+            position: absolute;
+            z-index: -7;
+            top: 257vh;
+            right: 9vw;
+            width: 260px;
+            height: 180px;
+        }
+
+        #testtube2{
+            position: absolute;
+            transform: scaleX(-1);
+            z-index: -6;
+            top: 320vh;
+            right: 10vw;
+            width: 155px;
+            height: 149.76px;
+        }
+
+        @media screen and (max-width: 450px) {
+
+            .heading p .ib,
+            .heading p .ug {
+                font-size: 30px;
+            }
+
+            #testtube1 {
+                width: 30vw;
+                height: 30vh;
+                top: 55vh;
+                left: 0;
+            }
+
+            #gear {
+                top: 0;
+                left: 15;
+                width: 60vw;
+                height: 65vh;                
+            }
+
+            #benzeneXflowers {
+                top: 80vh;
+                left: 18vw;
+                opacity: 0.6;
+                width: 250px;
+                height: 300px;
+            }
+
+            #bulbXbrain{
+                width: 140px;
+                height: 125px;
+                left: 0;
+                top: 500vh;
+            }
+
+            #labequipment{
+                top: 910vh;
+                opacity: 0.7;
+                left: 10vw;
+            }
+
+            #testtube2{
+                top: 986vh;
+                height: 30vh;
+                width: 30vw;
+                right: 0;
+            }
+
+            .general-rules-right span, .prize-right span, .formats-and-rounds-right span, .syllabusdesc-right span{
+                font-size: 20px;
+            }
+
+            ul li{
+                font-size: 15px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <img id="testtube1" src="testtube1.png" alt="no preview">
+    <img id="gear" src="gear.png" alt="no preview">
+    <img id="benzeneXflowers" src="benzeneXflowers.png" alt="no preview">
+    <img id="bulbXbrain" src="bulbXbrain.png" alt="no preview">
+    <img id="labequipment" src="lab-equipment.png" alt="no preview">
+    <img id="testtube2" src="testtube2.png" alt="no preview">
+    <div class="heading">
+        <p>
+            <span class="ib">INTEGRATION BEE:</span>
+            <br>
+            <span class="ug">For Undergraduate</span>
+        </p>
+    </div>
+
+    <div class="syllabus">
+        <div class="syllabus-left">
+            SYLLABUS
+        </div>
+        <div class="syllabusdesc-right">
+            <span>SYLLABUS</span>
+            <br>
+            <p>Integration upto undergraduate level</p>
+        </div>
+    </div>
+
+    <div class="formats-and-rounds">
+        <div class="formats-and-rounds-left">
+            FORMATS AND
+            <br>
+            ROUNDS
+        </div>
+        <div class="formats-and-rounds-right">
+            <span>FORMATS AND ROUNDS</span>
+            <p class="littledesc">
+                There will be a total of 5 rounds: Elimination round, top 16, quarter final, semifinal and final
+            <ul>
+                <li>
+                    Elimination round will be MCQ based written test; Top 16 is a 4 way match up; and quarter
+                    <br>
+                    final, semifinal and final is one to one knock-out.
+                </li>
+                <li>
+                    In Top 16, quarter final, semifinal and final,participants need to solve the problem on the
+                    <br>
+                    board.
+                </li>
+            </ul>
+            </p>
+
+            <p class="elimination-round">
+                <b>Elimination Round</b>
+            <ul>
+                <li>
+                    The Elimination Round will be a written test consisiting of 30 MCQ based integrations.
+                </li>
+                <li>
+                    For each correct answer,participants will get 4 marks and participants will lose 2 mark for each
+                    <br>
+                    wrong answer.
+                </li>
+                <li>
+                    The participants will have 30 minutes to solve these integrations,and the top 16 will be advanced to
+                    <br>
+                    the Super 16.
+                </li>
+                <li>
+                    If there is a tie, the ratio of the correct attempts will be considered.
+                </li>
+            </ul>
+            </p>
+
+            <p class="super-16">
+                <b>Super 16</b>
+                <br>
+            <p>
+                There will be a 4-way matchup to select the top 8, i.e., four studeb=nts will be called at a time to
+                solve
+                <br>
+                integration on the board.
+            </p>
+
+            <ul>
+                <li>
+                    Each student will have five integrations to solve, and the duration for each integration is 3
+                    minutes.
+                </li>
+                <li>
+                    <b>Marking:</b>Out of 4 participants, if X solves and Y fails, then solvers get Y points, and the
+                    rest lose X points
+                    <br>
+                    each.
+                </li>
+                <li>
+                    For example, if 1 participants solves an integral correctly out of 4, the solver will get 3 points,
+                    and the rest
+                    <br>
+                    will lose 1 point each.
+                </li>
+                <li>
+                    <b>Tie-Breaker:</b>The number of correct answers will be considered.
+                </li>
+            </ul>
+            </p>
+
+            <p class="quarter-final">
+                <b>Quarter-Final</b>
+                <br>
+                <ul>
+                    <li>
+                        Knockouts: The quarter finals will be decided based on the position in Super 16.
+                        <br>
+                        <p class="qf-rounds" style="display: flex; justify-content: center; line-height: 25px;">
+                            QF1: 1 vs 8
+                            <br>
+                            QF2: 2 vs 7
+                            <br>
+                            QF3: 3 vs 6
+                            <br>
+                            QF4: 4 vs 5
+                        </p>
+                    </li>
+                    <li>Each knockout will have 3 integrations and time to solve each integration is 3 minutes.</li>
+                    <li>Tie-Breaker: Additional round will be there and this will repeat until a winner is decided.</li>
+                </ul>
+            </p>
+
+            <p class="semi-final">
+                <b>Semi-Final</b>
+                <br>
+                <ul>
+                    <li>
+                        Knockouts
+                        <br>
+                        <p class="semi-final-rounds" style="display: flex; justify-content: center; line-height: 20px;">
+                            SF1: Winner of QF1 vs Winner of QF4
+                            <br>
+                            SF2: Winner of QF2 vs Winner of QF3
+                        </p>
+                    </li>
+                    <li>Each knockout will have 5 integrations and time to solve each integration is 4 minutes.</li>
+                    <li> Tie-Breaker: Additional round will be there and this will repeat until a winner is decided.</li>
+                </ul>
+            </p>
+
+            <p class="final">
+                <b>Final</b>
+                <br>
+                <p class="final-round" style="display: flex; justify-content: center; line-height: 20px;">
+                    Winner of SF1 vs Winner of SF2
+                </p>
+                <ul>
+                    <li>Each knockout will have 7 integrations and time to solve each integration is 5 minutes.</li>
+                    <li> Tie-Breaker: Additional round will be there and this will repeat until a winner is decided.</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <div class="prize">
+        <div class="prize-left">
+            PRIZE
+        </div>
+        <div class="prize-right">
+            <span>PRIZE</span>
+            <ul>
+                <li>Eliminated quarter finalist</li>
+                <li>Eliminated semifinalist</li>
+                <li>Winner and Runner-up trophy and Prize Money for Winer and Runner-up.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="general-rules">
+        <div class="general-rules-left">
+            GENERAL RULES
+        </div>
+        <div class="general-rules-right">
+            <span>GENERAL RULES</span>
+            <ul>
+                <li>
+                    Calculators, formula sheets or any other gadget are not allowed.
+                </li>
+                <li>
+                    The integrals can be definite or indefinite
+                </li>
+                <li>
+                    Participants do not have to write the arbitrary constant (+C) for indefinite integral.
+                </li>
+                <li>
+                    Participants can leave the answer in terms of large power/binomial coefficient/factorial etc. We will check 
+                    <br>
+                    if the answer is equivalent or not.
+                </li>
+                <li>
+                    Only the final answer will be evaluated.
+                </li>
+                <li>
+                    Participants need to circled/boxed the final answer for the judge to evaluate.
+                </li>
+                <li>
+                    If participant want to change the answer, he/she have to erase or strike out the previous answer.
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
