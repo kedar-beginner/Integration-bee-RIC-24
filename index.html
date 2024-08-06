@@ -17,88 +17,89 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            background-color: #FEFBEF;
             font-family: Lato;
         }
 
         .heading {
             position: relative;
             border-bottom: 0.5px solid #565B62;
-            overflow: hidden;
-            margin: 8% 12% 0% 12%;
-            padding: 20px 20px 0px 20px;
+            margin: 5% 8% 0% 8%;
+            padding: 2% 2% 1% 2%;
+            display: flex;
+            justify-content: flex-end;
         }
 
-        .heading p {
+        .main_heading {
             padding-right: 3%;
-            float: right;
             color: #00B0A6;
         }
 
-        .heading p .ib {
+        .main_heading .ib {
             font-family: Lato;
-            font-size: 40px;
-            font-weight: 350;
-            line-height: 40px;
+            font-size: 58px;
+            font-weight: 330;
             text-align: left;
 
         }
 
-        .heading p .ug {
+        .main_heading .ug {
             font-family: Lato;
-            font-size: 40px;
+            font-size: 58px;
             font-style: italic;
-            font-weight: 500;
-            line-height: 45px;
+            font-weight: 450;
             text-align: left;
         }
 
         #testtube1 {
             position: absolute;
             z-index: -5;
-            top: 19vh;
-            left: 7vw;
-            width: 155px;
-            height: 149.76px;
+            bottom: -4.5vh;
+            left: -5vw;
+            width: 10vw;
+            height: 20vh;
         }
 
         #gear {
             position: absolute;
-            top: 3vh;
-            left: 33vw;
-            rotate: -171.95deg;
-            z-index: -5;
-            width: 303px; 
-            height: 260px
+            top: -12vh;
+            left: 20vw;
+            z-index: -1;
+            width: 23vw;
+            height: 38vh;
         }
 
         .syllabus {
             position: relative;
             border-bottom: 0.5px solid #565B62;
-            margin: 0% 12%;
+            width: 84%;
+            margin: 0% 8%;
             padding: 5% 0%;
             display: flex;
-            column-gap: 15%;
+            column-gap: 14%;
         }
 
-        .syllabus-left {
-            font-size: 12px;
+        .syllabus-left,
+        .formats-and-rounds-left,
+        .prize-left,
+        .general-rules-left {
+            font-size: 9px;
         }
 
         .syllabusdesc-right span {
             color: #00B0A6;
             font-weight: 360;
-            font-size: 28px;
-            line-height: 28px;
+            font-size: 30px;
         }
 
         .syllabusdesc-right p {
-            font-size: 18px;
+            font-size: 20px;
         }
 
         .formats-and-rounds {
             position: relative;
             border-bottom: 0.5px solid #565B62;
-            margin: 0% 12%;
+            margin: 0% 8%;
             padding: 5% 0%;
             display: flex;
             column-gap: 13%;
@@ -106,213 +107,185 @@
 
         #benzeneXflowers {
             position: absolute;
-            width: 381px;
-            height: 400px;
+            width: 30vw;
+            height: 60vh;
             rotate: -5deg;
             z-index: -5;
-            top: 70vh;
-            right: 5vw;
+            top: 3%;
+            right: -11%;
         }
 
-        .formats-and-rounds-left {
-            font-size: 12px;
+        #bulbXbrain {
+            position: absolute;
+            z-index: -10;
+            top: 63%;
+            left: -5%;
+            width: 13vw;
+            height: 25vh;
+        }
+
+        #labequipment {
+            position: absolute;
+            z-index: -7;
+            top: 88%;
+            right: -5.3%;
+            width: 21vw;
+            height: 28vh;
         }
 
         .formats-and-rounds-right span {
             color: #00B0A6;
             font-weight: 360;
-            font-size: 28px;
-            line-height: 28px;
+            font-size: 30px;
         }
 
-        .littledesc {
-            font-size: 18px;
+        .littledesc,
+        .super-16-desc,
+        .final-round {
+            font-size: 20px;
         }
 
-        .elimination-round {
+        ul li {
+            font-size: 20px;
+        }
+
+        .elimination-round,
+        .super-16,
+        .quarter-final,
+        .semi-final,
+        .final {
             margin-top: 10%;
         }
 
         .elimination-round b {
-            font-size: 20px;
-        }
-
-        .super-16 {
-            margin-top: 10%;
+            font-size: 25px;
         }
 
         .super-16 b {
-            font-size: 20px;
-            line-height: 20px;
+            font-size: 25px;
         }
 
-        .quarter-final{
-            margin-top: 10%;
+
+        .quarter-final b,
+        .semi-final b,
+        .final b {
+            font-size: 25px;
         }
 
-        .quarter-final b{
-            font-size: 20px;
-        }
-
-        .semi-final{
-            margin-top: 10%;
-        }
-
-        .semi-final b{
-            font-size: 20px;
-        }
-
-        .final{
-            margin-top: 10%;
-        }
-
-        .final b{
-            font-size: 20px;
-        }
-
-        .prize{
+        .prize {
             position: relative;
             border-bottom: 0.5px solid #565B62;
-            margin: 0% 12%;
+            margin: 0% 8%;
             padding: 5% 0%;
             display: flex;
             column-gap: 17.5%;
         }
 
-        .prize-left{
-            font-size: 12px;
-        }
-
-        .prize-right span{
+        .prize-right span {
             color: #00B0A6;
             font-weight: 360;
-            font-size: 28px;
-            line-height: 28px;
+            font-size: 30px;
         }
 
-        .general-rules{
+        .general-rules {
             position: relative;
             border-bottom: 0.5px solid #565B62;
-            margin: 0% 12%;
+            margin: 0% 8%;
             padding: 5% 0%;
             display: flex;
             column-gap: 12.3%;
         }
 
-        .general-rules-left{
-            font-size: 12px;
-        }
-
-        .general-rules-right span{
-            color: #00B0A6;
-            font-weight: 360;
-            font-size: 28px;
-            line-height: 28px;
-        }
-
-
-        #bulbXbrain{
-            position: absolute;
-            z-index: -10;
-            top: 197vh;
-            left: 7vw;
-            width: 170px;
-            height: 155px;
-        }
-
-        #labequipment{
-            position: absolute;
-            z-index: -7;
-            top: 257vh;
-            right: 9vw;
-            width: 260px;
-            height: 180px;
-        }
-
-        #testtube2{
+        #testtube2 {
             position: absolute;
             transform: scaleX(-1);
             z-index: -6;
-            top: 320vh;
-            right: 10vw;
-            width: 155px;
-            height: 149.76px;
+            top: 18%;
+            right: -3.7%;
+            width: 10vw;
+            height: 20vh;
         }
 
-        @media screen and (max-width: 450px) {
+        .general-rules-right span {
+            color: #00B0A6;
+            font-weight: 360;
+            font-size: 30px;
+        }
 
-            .heading p .ib,
-            .heading p .ug {
+        @media screen and (max-width: 600px) {
+
+            .main_heading .ib,
+            .main_heading .ug {
                 font-size: 30px;
             }
+
+            .heading{
+                padding: 2% 2% 5% 2%;
+            }
+    
+
+            .main-heading{
+                padding-right: 0%;
+            }
+
             #testtube1 {
                 width: 100px;
                 height: 100px;
-                top: 50%;
-                left: 0;
             }
 
             #gear {
-                top: 5;
-                left: 120px;
                 width: 190px;
-                height: 190px;                
+                height: 190px;
+                top: 0;
             }
 
             #benzeneXflowers {
-                top: 80vh;
-                left: 23vw;
                 opacity: 0.6;
                 width: 250px;
                 height: 300px;
             }
 
-            #bulbXbrain{
+            #bulbXbrain {
                 width: 140px;
                 height: 125px;
-                left: 0;
-                top: 2000px;
             }
 
-            #labequipment{
-                top: 3000px;
-                opacity: 0.7;
-                left: 10vw;
+            #labequipment {
+                height: 150px;
+                width: 200px;
+                opacity: 0.8;
             }
 
-            #testtube2{
-                top: 3300px;
+            #testtube2 {
                 width: 100px;
                 height: 100px;
-                right: 0;
             }
 
-
-            .general-rules-right span, .prize-right span, .formats-and-rounds-right span, .syllabusdesc-right span{
+            .general-rules-right span,
+            .prize-right span,
+            .formats-and-rounds-right span,
+            .syllabusdesc-right span {
                 font-size: 20px;
             }
 
-            ul li{
+            ul li {
                 font-size: 15px;
             }
 
         }
+        
     </style>
 </head>
 
 <body>
-    <img id="testtube1" src="testtube1.png" alt="no preview">
-    <img id="gear" src="gear.png" alt="no preview">
-    <img id="benzeneXflowers" src="benzeneXflowers.png" alt="no preview">
-    <img id="bulbXbrain" src="bulbXbrain.png" alt="no preview">
-    <img id="labequipment" src="lab-equipment.png" alt="no preview">
-    <img id="testtube2" src="testtube2.png" alt="no preview">
     <div class="heading">
-        <p>
+        <img id="testtube1" src="testtube1.png" alt="no preview">
+        <img id="gear" src="gear.png" alt="no preview">
+        <div class="main_heading">
             <span class="ib">INTEGRATION BEE:</span>
             <br>
             <span class="ug">For Undergraduate</span>
-        </p>
+        </div>
     </div>
 
     <div class="syllabus">
@@ -327,6 +300,9 @@
     </div>
 
     <div class="formats-and-rounds">
+        <img id="benzeneXflowers" src="benzeneXflowers.png" alt="no preview">
+        <img id="bulbXbrain" src="bulbXbrain.png" alt="no preview">
+        <img id="labequipment" src="lab-equipment.png" alt="no preview">
         <div class="formats-and-rounds-left">
             FORMATS AND
             <br>
@@ -375,7 +351,7 @@
             <p class="super-16">
                 <b>Super 16</b>
                 <br>
-            <p>
+            <p class="super-16-desc">
                 There will be a 4-way matchup to select the top 8, i.e., four studeb=nts will be called at a time to
                 solve
                 <br>
@@ -408,53 +384,53 @@
             <p class="quarter-final">
                 <b>Quarter-Final</b>
                 <br>
-                <ul>
-                    <li>
-                        Knockouts: The quarter finals will be decided based on the position in Super 16.
+            <ul>
+                <li>
+                    Knockouts: The quarter finals will be decided based on the position in Super 16.
+                    <br>
+                    <p class="qf-rounds" style="display: flex; justify-content: center; line-height: 25px;">
+                        QF1: 1 vs 8
                         <br>
-                        <p class="qf-rounds" style="display: flex; justify-content: center; line-height: 25px;">
-                            QF1: 1 vs 8
-                            <br>
-                            QF2: 2 vs 7
-                            <br>
-                            QF3: 3 vs 6
-                            <br>
-                            QF4: 4 vs 5
-                        </p>
-                    </li>
-                    <li>Each knockout will have 3 integrations and time to solve each integration is 3 minutes.</li>
-                    <li>Tie-Breaker: Additional round will be there and this will repeat until a winner is decided.</li>
-                </ul>
+                        QF2: 2 vs 7
+                        <br>
+                        QF3: 3 vs 6
+                        <br>
+                        QF4: 4 vs 5
+                    </p>
+                </li>
+                <li>Each knockout will have 3 integrations and time to solve each integration is 3 minutes.</li>
+                <li>Tie-Breaker: Additional round will be there and this will repeat until a winner is decided.</li>
+            </ul>
             </p>
 
             <p class="semi-final">
                 <b>Semi-Final</b>
                 <br>
-                <ul>
-                    <li>
-                        Knockouts
+            <ul>
+                <li>
+                    Knockouts
+                    <br>
+                    <p class="semi-final-rounds" style="display: flex; justify-content: center; line-height: 20px;">
+                        SF1: Winner of QF1 vs Winner of QF4
                         <br>
-                        <p class="semi-final-rounds" style="display: flex; justify-content: center; line-height: 20px;">
-                            SF1: Winner of QF1 vs Winner of QF4
-                            <br>
-                            SF2: Winner of QF2 vs Winner of QF3
-                        </p>
-                    </li>
-                    <li>Each knockout will have 5 integrations and time to solve each integration is 4 minutes.</li>
-                    <li> Tie-Breaker: Additional round will be there and this will repeat until a winner is decided.</li>
-                </ul>
+                        SF2: Winner of QF2 vs Winner of QF3
+                    </p>
+                </li>
+                <li>Each knockout will have 5 integrations and time to solve each integration is 4 minutes.</li>
+                <li> Tie-Breaker: Additional round will be there and this will repeat until a winner is decided.</li>
+            </ul>
             </p>
 
             <p class="final">
                 <b>Final</b>
                 <br>
-                <p class="final-round" style="display: flex; justify-content: center; line-height: 20px;">
-                    Winner of SF1 vs Winner of SF2
-                </p>
-                <ul>
-                    <li>Each knockout will have 7 integrations and time to solve each integration is 5 minutes.</li>
-                    <li> Tie-Breaker: Additional round will be there and this will repeat until a winner is decided.</li>
-                </ul>
+            <p class="final-round" style="display: flex; justify-content: center; line-height: 20px;">
+                Winner of SF1 vs Winner of SF2
+            </p>
+            <ul>
+                <li>Each knockout will have 7 integrations and time to solve each integration is 5 minutes.</li>
+                <li> Tie-Breaker: Additional round will be there and this will repeat until a winner is decided.</li>
+            </ul>
             </p>
         </div>
     </div>
@@ -473,6 +449,7 @@
         </div>
     </div>
     <div class="general-rules">
+        <img id="testtube2" src="testtube2.png" alt="no preview">
         <div class="general-rules-left">
             GENERAL RULES
         </div>
@@ -489,7 +466,8 @@
                     Participants do not have to write the arbitrary constant (+C) for indefinite integral.
                 </li>
                 <li>
-                    Participants can leave the answer in terms of large power/binomial coefficient/factorial etc. We will check 
+                    Participants can leave the answer in terms of large power/binomial coefficient/factorial etc. We
+                    will check
                     <br>
                     if the answer is equivalent or not.
                 </li>
